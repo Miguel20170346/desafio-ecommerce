@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import StoreProvider from "@/redux/StoreProvider";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,8 @@ export default function RootLayout({
           <Navbar />
           {/* Contenedor principal: aquí se renderiza cada página */}
           <main className="flex-1">{children}</main>
+          {/* Buzón de notificaciones de Sonner (mensajes de confirmación) */}
+          <Toaster position="top-right" richColors />
         </StoreProvider>
       </body>
     </html>
