@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Audífonos Bluetooth X200",
+    "description": "Cancelación de ruido activa (ANC), 30 horas de batería, Bluetooth 5.3 y estuche de carga USB-C.",
+    "price": 59.99,
+    "category": "Electrónica",
+    "image": "https://picsum.photos/seed/audifonos-x200/500/500",
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "name": "Teclado Mecánico RGB",
+    "description": "Switches rojos lineales, retroiluminación RGB por tecla, anti-ghosting completo y estructura de aluminio.",
+    "price": 45.5,
+    "category": "Electrónica",
+    "image": "https://picsum.photos/seed/teclado-rgb/500/500",
+    "stock": 40
+  },
+  {
+    "id": 3,
+    "name": "Mouse Gamer 16000 DPI",
+    "description": "Sensor óptico de 16000 DPI ajustable, 7 botones programables y polling rate de 1000 Hz.",
+    "price": 29.99,
+    "category": "Electrónica",
+    "image": "https://picsum.photos/seed/mouse-gamer/500/500",
+    "stock": 50
+  },
+  {
+    "id": 4,
+    "name": "Monitor 27\" 144Hz",
+    "description": "Panel IPS QHD (2560x1440), tasa de refresco de 144 Hz, 1 ms de respuesta y compatible con FreeSync.",
+    "price": 219.0,
+    "category": "Electrónica",
+    "image": "https://picsum.photos/seed/monitor-144hz/500/500",
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "name": "Camiseta Algodón Premium",
+    "description": "100% algodón peinado de 180 g/m², corte regular, costuras reforzadas y tinte resistente al lavado.",
+    "price": 12.99,
+    "category": "Ropa",
+    "image": "https://picsum.photos/seed/camiseta-premium/500/500",
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "name": "Sudadera con Capucha",
+    "description": "Felpa perchada de 320 g/m², bolsillo canguro, cordón ajustable y puños elásticos.",
+    "price": 27.5,
+    "category": "Ropa",
+    "image": "https://picsum.photos/seed/sudadera-capucha/500/500",
+    "stock": 60
+  },
+  {
+    "id": 7,
+    "name": "Jeans Slim Fit",
+    "description": "Mezclilla elástica con 2% de spandex, corte slim, cinco bolsillos y cierre metálico reforzado.",
+    "price": 34.99,
+    "category": "Ropa",
+    "image": "https://picsum.photos/seed/jeans-slim/500/500",
+    "stock": 45
+  },
+  {
+    "id": 8,
+    "name": "Chaqueta Impermeable",
+    "description": "Tela ripstop con membrana impermeable 5000 mm, costuras selladas y capucha ajustable.",
+    "price": 49.99,
+    "category": "Ropa",
+    "image": "https://picsum.photos/seed/chaqueta-impermeable/500/500",
+    "stock": 30
+  },
+  {
+    "id": 9,
+    "name": "Cafetera Espresso 15 bar",
+    "description": "Bomba de presión de 15 bares, espumador de leche, depósito de 1.2 L y sistema de apagado automático.",
+    "price": 89.99,
+    "category": "Hogar",
+    "image": "https://picsum.photos/seed/cafetera-espresso/500/500",
+    "stock": 20
+  },
+  {
+    "id": 10,
+    "name": "Set de Sartenes Antiadherente",
+    "description": "Juego de 3 sartenes con recubrimiento antiadherente libre de PFOA, base de inducción y mango ergonómico.",
+    "price": 54.0,
+    "category": "Hogar",
+    "image": "https://picsum.photos/seed/sartenes-set/500/500",
+    "stock": 35
+  },
+  {
+    "id": 11,
+    "name": "Lámpara LED de Escritorio",
+    "description": "LED regulable con 3 temperaturas de color, puerto de carga USB y brazo articulado de 180°.",
+    "price": 22.99,
+    "category": "Hogar",
+    "image": "https://picsum.photos/seed/lampara-led/500/500",
+    "stock": 55
+  },
+  {
+    "id": 12,
+    "name": "Aspiradora Inalámbrica",
+    "description": "Motor sin escobillas, 25 kPa de succión, batería de 40 min y filtro HEPA lavable.",
+    "price": 129.99,
+    "category": "Hogar",
+    "image": "https://picsum.photos/seed/aspiradora-inalambrica/500/500",
+    "stock": 18
+  },
+  {
+    "id": 13,
+    "name": "Balón de Fútbol Pro",
+    "description": "Tamaño 5 con paneles termosellados, cámara de butilo y superficie texturizada para mejor control.",
+    "price": 19.99,
+    "category": "Deportes",
+    "image": "https://picsum.photos/seed/balon-futbol/500/500",
+    "stock": 70
+  },
+  {
+    "id": 14,
+    "name": "Mancuernas Ajustables 20kg",
+    "description": "Par de mancuernas ajustables de 2 a 20 kg por disco, sistema de bloqueo rápido y agarre antideslizante.",
+    "price": 99.0,
+    "category": "Deportes",
+    "image": "https://picsum.photos/seed/mancuernas-ajustables/500/500",
+    "stock": 22
+  },
+  {
+    "id": 15,
+    "name": "Bicicleta de Montaña 21v",
+    "description": "Cuadro de aluminio, 21 velocidades Shimano, frenos de disco y suspensión delantera regulable.",
+    "price": 299.99,
+    "category": "Deportes",
+    "image": "https://picsum.photos/seed/bicicleta-montana/500/500",
+    "stock": 10
+  },
+  {
+    "id": 16,
+    "name": "Tapete de Yoga Antideslizante",
+    "description": "Material TPE ecológico de 6 mm, superficie antideslizante doble cara y correa de transporte incluida.",
+    "price": 18.5,
+    "category": "Deportes",
+    "image": "https://picsum.photos/seed/tapete-yoga/500/500",
+    "stock": 80
+  },
+  {
+    "id": 17,
+    "name": "Libro: Clean Code",
+    "description": "Guía de Robert C. Martin sobre buenas prácticas de programación y código mantenible. Edición en español.",
+    "price": 32.0,
+    "category": "Libros",
+    "image": "https://picsum.photos/seed/clean-code/500/500",
+    "stock": 40
+  },
+  {
+    "id": 18,
+    "name": "Libro: El Principito",
+    "description": "Clásico de Antoine de Saint-Exupéry, edición ilustrada de tapa dura con papel de alto gramaje.",
+    "price": 14.99,
+    "category": "Libros",
+    "image": "https://picsum.photos/seed/el-principito/500/500",
+    "stock": 65
+  },
+  {
+    "id": 19,
+    "name": "Libro: Estructuras de Datos en TS",
+    "description": "Manual práctico de estructuras de datos y algoritmos implementados en TypeScript, con ejercicios resueltos.",
+    "price": 27.99,
+    "category": "Libros",
+    "image": "https://picsum.photos/seed/estructuras-ts/500/500",
+    "stock": 33
+  },
+  {
+    "id": 20,
+    "name": "Libro: Cien Años de Soledad",
+    "description": "Obra maestra de Gabriel García Márquez, edición conmemorativa de tapa blanda con prólogo especial.",
+    "price": 16.5,
+    "category": "Libros",
+    "image": "https://picsum.photos/seed/cien-anos/500/500",
+    "stock": 48
+  }
+]
