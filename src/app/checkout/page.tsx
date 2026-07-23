@@ -15,6 +15,8 @@ export default function CheckoutPage() {
 
   // Guardamos la factura generada para mostrar la pantalla de éxito.
   const [factura, setFactura] = useState<Invoice | null>(null);
+  // Indica si ya se "envió" la factura por correo (envío simulado).
+  const [enviado, setEnviado] = useState(false);
 
   const total = items.reduce((s, i) => s + i.price * i.quantity, 0);
 
@@ -44,6 +46,14 @@ export default function CheckoutPage() {
     doc.save(`${factura.numero}.pdf`);
   };
 
+  // Envío de la factura por correo (simulado, como permite el PDF).
+  // Muestra una confirmación clara de que la factura fue enviada al cliente.
+  const handleEnviarCorreo = () => {
+    if (!factura) return;
+    setEnviado(true);
+    toast.success(`Factura enviada al correo ${factura.cliente.email}`);
+  };
+
   // --- Pantalla de ÉXITO (después de comprar) ---
   if (factura) {
     return (
@@ -56,12 +66,27 @@ export default function CheckoutPage() {
             Factura <strong>{factura.numero}</strong> por un total de{" "}
             <strong>${factura.total.toFixed(2)}</strong>.
           </p>
+
+          {/* Confirmación del envío por correo (aparece tras enviar) */}
+          {enviado && (
+            <p className="mt-3 rounded-lg bg-white px-3 py-2 text-sm text-green-700">
+              📧 Factura enviada al correo <strong>{factura.cliente.email}</strong>
+            </p>
+          )}
+
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <button
-              onClick={handleDescargar}
-              className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+              onClick={handleEnviarCorreo}
+              disabled={enviado}
+              className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 disabled:opacity-50"
             >
-              Descargar factura otra vez
+              {enviado ? "Factura enviada ✓" : "Enviar factura por correo"}
+            </button>
+            <button
+              onClick={handleDescargar}
+              className="rounded-lg border border-indigo-300 px-4 py-2.5 text-sm font-medium text-indigo-700 transition-colors hover:bg-indigo-50"
+            >
+              Descargar factura
             </button>
             <Link
               href="/"
