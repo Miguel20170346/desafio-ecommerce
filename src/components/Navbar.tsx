@@ -1,16 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { useAppSelector } from "@/redux/hooks";
+import { toast } from "sonner";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { cerrarSesion } from "@/redux/authSlice";
 
 // Barra de navegación superior. Se coloca en el layout para que
 // aparezca en todas las páginas de la tienda.
 export default function Navbar() {
+  const dispatch = useAppDispatch();
+
   // LEEMOS el carrito global y sumamos todas las cantidades.
   // Así el contador refleja el total de unidades, no solo productos distintos.
   const totalItems = useAppSelector((state) =>
     state.cart.items.reduce((suma, item) => suma + item.quantity, 0)
   );
+
+  // LEEMOS el usuario en sesión (null si nadie ha iniciado sesión).
+  const user = useAppSelector((state) => state.auth.user);
+
+  const handleCerrarSesion = () => {
+    dispatch(cerrarSesion());
+    toast.success("Sesión cerrada");
+  };
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
@@ -22,12 +34,28 @@ export default function Navbar() {
 
         {/* Enlaces de la derecha */}
         <div className="flex items-center gap-4 text-sm font-medium">
-          <Link
-            href="/login"
-            className="text-slate-600 transition-colors hover:text-indigo-600"
-          >
-            Iniciar sesión
-          </Link>
+          {user ? (
+            // Si HAY sesión: saludo + cerrar sesión
+            <>
+              <span className="hidden text-slate-600 sm:inline">
+                Hola, {user.name}
+              </span>
+              <button
+                onClick={handleCerrarSesion}
+                className="text-slate-600 transition-colors hover:text-indigo-600"
+              >
+                Cerrar sesión
+              </button>
+            </>
+          ) : (
+            // Si NO hay sesión: enlace a iniciar sesión
+            <Link
+              href="/login"
+              className="text-slate-600 transition-colors hover:text-indigo-600"
+            >
+              Iniciar sesión
+            </Link>
+          )}
           <Link
             href="/cart"
             className="relative rounded-lg bg-indigo-600 px-3 py-2 text-white transition-colors hover:bg-indigo-700"
