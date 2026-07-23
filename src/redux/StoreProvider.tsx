@@ -4,9 +4,11 @@ import { useEffect, useRef } from "react";
 import { Provider } from "react-redux";
 import { makeStore, type AppStore } from "./store";
 import { setCarrito } from "./cartSlice";
+import { iniciarSesion } from "./authSlice";
 
-// Clave con la que guardamos el carrito en el navegador.
-const STORAGE_KEY = "novashop_cart";
+// Claves con las que guardamos datos en el navegador.
+const CART_KEY = "novashop_cart";
+const SESSION_KEY = "novashop_session";
 
 export default function StoreProvider({
   children,
@@ -23,24 +25,28 @@ export default function StoreProvider({
     const store = storeRef.current;
     if (!store) return;
 
-    // 1) HIDRATAR: al cargar la página, leemos el carrito guardado
-    //    en localStorage y lo metemos al estado global.
-    const guardado = localStorage.getItem(STORAGE_KEY);
-    if (guardado) {
-      try {
-        store.dispatch(setCarrito(JSON.parse(guardado)));
-      } catch {
-        // Si el dato está corrupto, lo ignoramos.
-      }
+    // 1) HIDRATAR: al cargar la página, recuperamos el carrito y la sesión
+    //    guardados en localStorage y los metemos al estado global.
+    try {
+      const carrito = localStorage.getItem(CART_KEY);
+      if (carrito) store.dispatch(setCarrito(JSON.parse(carrito)));
+
+      const sesion = localStorage.getItem(SESSION_KEY);
+      if (sesion) store.dispatch(iniciarSesion(JSON.parse(sesion)));
+    } catch {
+      // Si algún dato está corrupto, lo ignoramos.
     }
 
-    // 2) PERSISTIR: nos suscribimos a los cambios del store y, cada vez
-    //    que el carrito cambia, lo guardamos en localStorage.
+    // 2) PERSISTIR: cada vez que el estado cambia, guardamos carrito y sesión.
     const unsubscribe = store.subscribe(() => {
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify(store.getState().cart.items)
-      );
+      const estado = store.getState();
+      localStorage.setItem(CART_KEY, JSON.stringify(estado.cart.items));
+
+      if (estado.auth.user) {
+        localStorage.setItem(SESSION_KEY, JSON.stringify(estado.auth.user));
+      } else {
+        localStorage.removeItem(SESSION_KEY);
+      }
     });
 
     return () => unsubscribe();

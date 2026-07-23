@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./cartSlice";
+import authReducer from "./authSlice";
 
 // makeStore crea una nueva "bodega" (store) con todos los slices registrados.
 // La usamos como función para poder crear el store dentro del Provider (cliente).
@@ -7,8 +8,8 @@ export const makeStore = () => {
   return configureStore({
     reducer: {
       // Cada clave es una "sección" del estado global.
-      // Aquí el carrito vivirá en state.cart
-      cart: cartReducer,
+      cart: cartReducer, // el carrito vive en state.cart
+      auth: authReducer, // la sesión vive en state.auth
     },
   });
 };
