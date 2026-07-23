@@ -23,3 +23,12 @@ export interface Product {
 export interface CartItem extends Product {
   quantity: number;
 }
+
+// Datos de una factura generada tras la compra.
+export interface Invoice {
+  numero: string; // número/identificador de la factura
+  fecha: string; // fecha de emisión (texto legible)
+  cliente: { name: string; email: string };
+  items: CartItem[]; // productos comprados
+  total: number; // total pagado
+}
