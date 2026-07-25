@@ -5,7 +5,7 @@
     "description": "Cancelación de ruido activa (ANC), 30 horas de batería, Bluetooth 5.3 y estuche de carga USB-C.",
     "price": 59.99,
     "category": "Electrónica",
-    "image": "https://loremflickr.com/500/500/headphones?lock=1",
+    "image": "/products/1.jpg",
     "stock": 25
   },
   {
@@ -14,7 +14,7 @@
     "description": "Switches rojos lineales, retroiluminación RGB por tecla, anti-ghosting completo y estructura de aluminio.",
     "price": 45.5,
     "category": "Electrónica",
-    "image": "https://loremflickr.com/500/500/keyboard?lock=2",
+    "image": "/products/2.jpg",
     "stock": 40
   },
   {
@@ -23,7 +23,7 @@
     "description": "Sensor óptico de 16000 DPI ajustable, 7 botones programables y polling rate de 1000 Hz.",
     "price": 29.99,
     "category": "Electrónica",
-    "image": "https://loremflickr.com/500/500/mouse?lock=3",
+    "image": "/products/3.jpg",
     "stock": 50
   },
   {
@@ -32,7 +32,7 @@
     "description": "Panel IPS QHD (2560x1440), tasa de refresco de 144 Hz, 1 ms de respuesta y compatible con FreeSync.",
     "price": 219.0,
     "category": "Electrónica",
-    "image": "https://loremflickr.com/500/500/monitor?lock=4",
+    "image": "/products/4.jpg",
     "stock": 15
   },
   {
@@ -41,7 +41,7 @@
     "description": "100% algodón peinado de 180 g/m², corte regular, costuras reforzadas y tinte resistente al lavado.",
     "price": 12.99,
     "category": "Ropa",
-    "image": "https://loremflickr.com/500/500/tshirt?lock=5",
+    "image": "/products/5.jpg",
     "stock": 100
   },
   {
@@ -50,7 +50,7 @@
     "description": "Felpa perchada de 320 g/m², bolsillo canguro, cordón ajustable y puños elásticos.",
     "price": 27.5,
     "category": "Ropa",
-    "image": "https://loremflickr.com/500/500/hoodie?lock=6",
+    "image": "/products/6.jpg",
     "stock": 60
   },
   {
@@ -59,7 +59,7 @@
     "description": "Mezclilla elástica con 2% de spandex, corte slim, cinco bolsillos y cierre metálico reforzado.",
     "price": 34.99,
     "category": "Ropa",
-    "image": "https://loremflickr.com/500/500/jeans?lock=7",
+    "image": "/products/7.jpg",
     "stock": 45
   },
   {
@@ -68,7 +68,7 @@
     "description": "Tela ripstop con membrana impermeable 5000 mm, costuras selladas y capucha ajustable.",
     "price": 49.99,
     "category": "Ropa",
-    "image": "https://loremflickr.com/500/500/jacket?lock=8",
+    "image": "/products/8.jpg",
     "stock": 30
   },
   {
@@ -77,7 +77,7 @@
     "description": "Bomba de presión de 15 bares, espumador de leche, depósito de 1.2 L y sistema de apagado automático.",
     "price": 89.99,
     "category": "Hogar",
-    "image": "https://loremflickr.com/500/500/coffee?lock=9",
+    "image": "/products/9.jpg",
     "stock": 20
   },
   {
@@ -86,7 +86,7 @@
     "description": "Juego de 3 sartenes con recubrimiento antiadherente libre de PFOA, base de inducción y mango ergonómico.",
     "price": 54.0,
     "category": "Hogar",
-    "image": "https://loremflickr.com/500/500/cookware?lock=10",
+    "image": "/products/10.jpg",
     "stock": 35
   },
   {
@@ -95,7 +95,7 @@
     "description": "LED regulable con 3 temperaturas de color, puerto de carga USB y brazo articulado de 180°.",
     "price": 22.99,
     "category": "Hogar",
-    "image": "https://loremflickr.com/500/500/lamp?lock=11",
+    "image": "/products/11.jpg",
     "stock": 55
   },
   {
@@ -104,7 +104,7 @@
     "description": "Motor sin escobillas, 25 kPa de succión, batería de 40 min y filtro HEPA lavable.",
     "price": 129.99,
     "category": "Hogar",
-    "image": "https://loremflickr.com/500/500/vacuum-cleaner?lock=12",
+    "image": "/products/12.jpg",
     "stock": 18
   },
   {
@@ -113,7 +113,7 @@
     "description": "Tamaño 5 con paneles termosellados, cámara de butilo y superficie texturizada para mejor control.",
     "price": 19.99,
     "category": "Deportes",
-    "image": "https://loremflickr.com/500/500/soccer-ball?lock=13",
+    "image": "/products/13.jpg",
     "stock": 70
   },
   {
@@ -122,7 +122,7 @@
     "description": "Par de mancuernas ajustables de 2 a 20 kg por disco, sistema de bloqueo rápido y agarre antideslizante.",
     "price": 99.0,
     "category": "Deportes",
-    "image": "https://loremflickr.com/500/500/dumbbell?lock=14",
+    "image": "/products/14.jpg",
     "stock": 22
   },
   {
@@ -131,7 +131,7 @@
     "description": "Cuadro de aluminio, 21 velocidades Shimano, frenos de disco y suspensión delantera regulable.",
     "price": 299.99,
     "category": "Deportes",
-    "image": "https://loremflickr.com/500/500/bicycle?lock=15",
+    "image": "/products/15.jpg",
     "stock": 10
   },
   {
@@ -140,7 +140,7 @@
     "description": "Material TPE ecológico de 6 mm, superficie antideslizante doble cara y correa de transporte incluida.",
     "price": 18.5,
     "category": "Deportes",
-    "image": "https://loremflickr.com/500/500/yoga-mat?lock=16",
+    "image": "/products/16.jpg",
     "stock": 80
   },
   {
@@ -149,7 +149,7 @@
     "description": "Guía de Robert C. Martin sobre buenas prácticas de programación y código mantenible. Edición en español.",
     "price": 32.0,
     "category": "Libros",
-    "image": "https://loremflickr.com/500/500/book?lock=17",
+    "image": "/products/17.jpg",
     "stock": 40
   },
   {
@@ -158,7 +158,7 @@
     "description": "Clásico de Antoine de Saint-Exupéry, edición ilustrada de tapa dura con papel de alto gramaje.",
     "price": 14.99,
     "category": "Libros",
-    "image": "https://loremflickr.com/500/500/book?lock=18",
+    "image": "/products/18.jpg",
     "stock": 65
   },
   {
@@ -167,7 +167,7 @@
     "description": "Manual práctico de estructuras de datos y algoritmos implementados en TypeScript, con ejercicios resueltos.",
     "price": 27.99,
     "category": "Libros",
-    "image": "https://loremflickr.com/500/500/book?lock=19",
+    "image": "/products/19.jpg",
     "stock": 33
   },
   {
@@ -176,7 +176,7 @@
     "description": "Obra maestra de Gabriel García Márquez, edición conmemorativa de tapa blanda con prólogo especial.",
     "price": 16.5,
     "category": "Libros",
-    "image": "https://loremflickr.com/500/500/book?lock=20",
+    "image": "/products/20.jpg",
     "stock": 48
   }
 ]
