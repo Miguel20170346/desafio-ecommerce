@@ -9,7 +9,7 @@ Aplicación de comercio electrónico desarrollada con **Next.js, TypeScript, Red
 ## 🔗 Enlaces
 
 - 🌐 **Sitio publicado:** https://desafio-ecommerce-pi.vercel.app
-- 🎥 **Video demostrativo:** _(pega aquí el enlace del video)_
+- 🎥 **Video demostrativo:** https://drive.google.com/file/d/1lc3HTat8und6hJd_5a2gnTnWooipNDZj/view?usp=sharing
 
 ---
 
