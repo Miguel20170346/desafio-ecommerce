@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NovaShop | Tienda en línea",
   description:
-    "E-commerce desarrollado con Next.js, TypeScript y Tailwind CSS. Primer Desafío Práctico - DPS.",
+    "Tienda en línea de productos desarrollada con Next.js, TypeScript y Tailwind CSS.",
 };
 
 export default function RootLayout({

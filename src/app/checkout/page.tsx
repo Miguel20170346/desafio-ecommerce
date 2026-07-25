@@ -46,8 +46,8 @@ export default function CheckoutPage() {
     doc.save(`${factura.numero}.pdf`);
   };
 
-  // Envío de la factura por correo (simulado, como permite el PDF).
-  // Muestra una confirmación clara de que la factura fue enviada al cliente.
+  // Simula el envío de la factura por correo y muestra una confirmación
+  // en pantalla con el correo del cliente.
   const handleEnviarCorreo = () => {
     if (!factura) return;
     setEnviado(true);

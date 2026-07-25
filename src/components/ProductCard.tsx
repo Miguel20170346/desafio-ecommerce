@@ -24,7 +24,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <article className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
-      {/* IMAGEN a la izquierda del nombre (requisito del PDF) usando next/image */}
+      {/* Imagen del producto a la izquierda del nombre (next/image) */}
       <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:h-28 sm:w-28">
         <Image
           src={product.image}

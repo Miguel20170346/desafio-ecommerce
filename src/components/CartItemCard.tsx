@@ -13,7 +13,7 @@ interface CartItemCardProps {
 export default function CartItemCard({ item }: CartItemCardProps) {
   const dispatch = useAppDispatch();
 
-  // Eliminar CON CONFIRMACIÓN (requisito del PDF), usando Sonner en vez de alert.
+  // Elimina el producto pidiendo confirmación con un toast de Sonner.
   const handleEliminar = () => {
     toast(`¿Eliminar "${item.name}" del carrito?`, {
       action: {

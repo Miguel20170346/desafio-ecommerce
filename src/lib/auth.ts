@@ -1,6 +1,5 @@
-// "Base de datos" simulada de usuarios, guardada en localStorage.
-// NOTA: en una app real las contraseñas nunca se guardan así (se cifran en un
-// servidor). Aquí es una simulación con fines académicos, como permite el PDF.
+// Base de datos de usuarios guardada en localStorage.
+// NOTA: en una app real las contraseñas se cifrarían en un servidor.
 
 export interface StoredUser {
   name: string;
