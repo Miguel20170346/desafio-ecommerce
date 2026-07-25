@@ -8,7 +8,7 @@ Aplicación de comercio electrónico desarrollada con **Next.js, TypeScript, Red
 
 ## 🔗 Enlaces
 
-- 🌐 **Sitio publicado:** _(pega aquí la URL de Vercel una vez desplegado)_
+- 🌐 **Sitio publicado:** https://desafio-ecommerce-pi.vercel.app
 - 🎥 **Video demostrativo:** _(pega aquí el enlace del video)_
 
 ---
@@ -70,12 +70,12 @@ src/
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/USUARIO/NOMBRE-REPO.git
+   git clone https://github.com/Miguel20170346/desafio-ecommerce.git
    ```
 
 2. Entra a la carpeta del proyecto:
    ```bash
-   cd NOMBRE-REPO
+   cd desafio-ecommerce
    ```
 
 3. Instala las dependencias:
